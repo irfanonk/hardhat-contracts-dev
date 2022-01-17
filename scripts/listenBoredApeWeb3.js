@@ -5,7 +5,7 @@ async function listenBoredApe() {
   // console.log("ebv", process.env);
   try {
     var web3 = new Web3(
-      new Web3.providers.WebsocketProvider(process.env.INFURA_MAINNET_WSS_URL)
+      new Web3.providers.WebsocketProvider(process.env.INFURA_MAINNET_WSS_URL) //url with project id
     );
     console.log("connected");
 
