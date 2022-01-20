@@ -1,0 +1,93 @@
+evt 21 10 45 a 0x0000000000000000000000000000000000000000 b 0x96Ca932d173946468eF1b22Da41EAaFBF249F120 c BigNumber { _hex: '0x01a6', _isBigNumber: true } d {
+  blockNumber: 14011502,
+  blockHash: '0x8705c45c75c2c6249c4e96ccbfe5f2a18ab1291269f2c3f33faca2fa78ff7253',
+  transactionIndex: 580,
+  removed: false,
+  address: '0x8d4B648F7fAB1c72d1690b42693fb7525ce3025e',
+  data: '0x',
+  topics: [
+    '0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef',
+    '0x0000000000000000000000000000000000000000000000000000000000000000',
+    '0x00000000000000000000000096ca932d173946468ef1b22da41eaafbf249f120',
+    '0x00000000000000000000000000000000000000000000000000000000000001a6'
+  ],
+  transactionHash: '0xa43e6637872c4d4771190f15381ef9ac1d2bd4656ef6bd69b838b2e8236c830c',
+  logIndex: 462,
+  removeListener: [Function (anonymous)],
+  getBlock: [Function (anonymous)],
+  getTransaction: [Function (anonymous)],
+  getTransactionReceipt: [Function (anonymous)],
+  event: 'Transfer',
+  eventSignature: 'Transfer(address,address,uint256)',
+  decode: [Function (anonymous)],
+  args: [
+    '0x0000000000000000000000000000000000000000',
+    '0x96Ca932d173946468eF1b22Da41EAaFBF249F120',
+    BigNumber { _hex: '0x01a6', _isBigNumber: true },
+    from: '0x0000000000000000000000000000000000000000',
+    to: '0x96Ca932d173946468eF1b22Da41EAaFBF249F120',
+    tokenId: BigNumber { _hex: '0x01a6', _isBigNumber: true }
+  ]
+} e undefined f undefined
+evt 10 23 32 a 0x0000000000000000000000000000000000000000 b 0x71d3441C65bC4D2Ae0d8C249096727b9f417F1Ff c BigNumber { _hex: '0x01a9', _isBigNumber: true } d {
+  blockNumber: 14021614,
+  blockHash: '0xadaac3ac1859b42cb37c3ade37b326e3af67c27f6a35f69754b69786ebc33a8f',
+  transactionIndex: 47,
+  removed: false,
+  address: '0x8d4B648F7fAB1c72d1690b42693fb7525ce3025e',
+  data: '0x',
+  topics: [
+    '0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef',
+    '0x0000000000000000000000000000000000000000000000000000000000000000',
+    '0x00000000000000000000000071d3441c65bc4d2ae0d8c249096727b9f417f1ff',
+    '0x00000000000000000000000000000000000000000000000000000000000001a9'
+  ],
+  transactionHash: '0x05a6b9bd4f493b19dd7e02a314022639a3983d55c40b692638a29d06d6352933',
+  logIndex: 83,
+  removeListener: [Function (anonymous)],
+  getBlock: [Function (anonymous)],
+  getTransaction: [Function (anonymous)],
+  getTransactionReceipt: [Function (anonymous)],
+  event: 'Transfer',
+  eventSignature: 'Transfer(address,address,uint256)',
+  decode: [Function (anonymous)],
+  args: [
+    '0x0000000000000000000000000000000000000000',
+    '0x71d3441C65bC4D2Ae0d8C249096727b9f417F1Ff',
+    BigNumber { _hex: '0x01a9', _isBigNumber: true },
+    from: '0x0000000000000000000000000000000000000000',
+    to: '0x71d3441C65bC4D2Ae0d8C249096727b9f417F1Ff',
+    tokenId: BigNumber { _hex: '0x01a9', _isBigNumber: true }
+  ]
+} e undefined f undefined
+evt 11 0 35 a 0x0000000000000000000000000000000000000000 b 0xd80DE0e93C72d7E477d4F91F16D4B18869d71059 c BigNumber { _hex: '0x01aa', _isBigNumber: true } d {
+  blockNumber: 14021764,
+  blockHash: '0xdd0142737fc39f118334da96ffe90cebe06dd7a440b5660aa98312ce53328d2d',
+  transactionIndex: 68,
+  removed: false,
+  address: '0x8d4B648F7fAB1c72d1690b42693fb7525ce3025e',
+  data: '0x',
+  topics: [
+    '0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef',
+    '0x0000000000000000000000000000000000000000000000000000000000000000',
+    '0x000000000000000000000000d80de0e93c72d7e477d4f91f16d4b18869d71059',
+    '0x00000000000000000000000000000000000000000000000000000000000001aa'
+  ],
+  transactionHash: '0x74163b1dfc5992b3ea65e0506c8c7cd1a9709828f1a96869a1f34728772aa0e7',
+  logIndex: 81,
+  removeListener: [Function (anonymous)],
+  getBlock: [Function (anonymous)],
+  getTransaction: [Function (anonymous)],
+  getTransactionReceipt: [Function (anonymous)],
+  event: 'Transfer',
+  eventSignature: 'Transfer(address,address,uint256)',
+  decode: [Function (anonymous)],
+  args: [
+    '0x0000000000000000000000000000000000000000',
+    '0xd80DE0e93C72d7E477d4F91F16D4B18869d71059',
+    BigNumber { _hex: '0x01aa', _isBigNumber: true },
+    from: '0x0000000000000000000000000000000000000000',
+    to: '0xd80DE0e93C72d7E477d4F91F16D4B18869d71059',
+    tokenId: BigNumber { _hex: '0x01aa', _isBigNumber: true }
+  ]
+} e undefined f undefined

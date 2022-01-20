@@ -19,7 +19,7 @@ async function listenboredApe() {
     // boredApe.connect();
 
     boredApe.on("Transfer", transfer);
-    function transfer(a, b, c, d, e, f) {
+    function transfer(a, b, c, d) {
       console.log(
         "evt",
         new Date().getHours(),
@@ -33,10 +33,7 @@ async function listenboredApe() {
         c,
         "d",
         d,
-        "e",
-        e,
-        "f",
-        f
+        "e"
       );
     }
   } catch (error) {

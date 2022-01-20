@@ -6,16 +6,26 @@ async function main() {
   // console.log("Deploying contracts with the account:", deployer.address);
 
   try {
-    const CampaignFac = await hre.ethers.getContractFactory("CampaignFactory"); // Getting the Contract
-    const campaignFac = await CampaignFac.deploy(); //deploying the contract
+    //-- MyNFT
 
-    await campaignFac.deployed(); // waiting for the contract to be deployed
-    console.log("CampaignFac deployed to:", campaignFac.address);
+    const MyNFT = await hre.ethers.getContractFactory("MyNFT"); // Getting the Contract
+    const myNFT = await MyNFT.deploy(); //deploying the contract
 
-    campaignFac.on("NewCampaign", listenEvent);
-    function listenEvent(a, b, c, d) {
-      console.log("evt", a, b, c, d);
-    }
+    await myNFT.deployed(); // waiting for the contract to be deployed
+    console.log("MyNFT deployed to:", myNFT.address);
+
+    //--- campaign--
+    // const CampaignFac = await hre.ethers.getContractFactory("CampaignFactory"); // Getting the Contract
+    // const campaignFac = await CampaignFac.deploy(); //deploying the contract
+
+    // await campaignFac.deployed(); // waiting for the contract to be deployed
+    // console.log("CampaignFac deployed to:", campaignFac.address);
+
+    // campaignFac.on("NewCampaign", listenEvent);
+    // function listenEvent(a, b, c, d) {
+    //   console.log("evt", a, b, c, d);
+    // }
+
     // await campaignFac.createCampaign("irfan", "for irf", 2500);
     // console.log("campaignFac", campaignFac.events);
     // const getDeployedCamp = await campaignFac.getDeployedCampaign();
