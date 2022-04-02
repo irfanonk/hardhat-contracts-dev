@@ -6,13 +6,29 @@ async function main() {
   // console.log("Deploying contracts with the account:", deployer.address);
 
   try {
-    //-- MyNFT
+    // //-- MyNFT
 
-    const MyNFT = await hre.ethers.getContractFactory("MyNFT"); // Getting the Contract
-    const myNFT = await MyNFT.deploy(); //deploying the contract
+    // const MyNFT = await hre.ethers.getContractFactory("MyNFT"); // Getting the Contract
+    // const myNFT = await MyNFT.deploy(); //deploying the contract
 
-    await myNFT.deployed(); // waiting for the contract to be deployed
-    console.log("MyNFT deployed to:", myNFT.address);
+    // await myNFT.deployed(); // waiting for the contract to be deployed
+    // console.log("MyNFT deployed to:", myNFT.address);
+
+    // //-- Date
+
+    const Date = await hre.ethers.getContractFactory("Date"); // Getting the Contract
+    const date = await Date.deploy(); //deploying the contract
+
+    await date.deployed(); // waiting for the contract to be deployed
+    console.log("date deployed to:", date.address);
+
+    //-- Token
+
+    // const Token = await hre.ethers.getContractFactory("StreetFightersToken"); // Getting the Contract
+    // const token = await Token.deploy(); //deploying the contract
+
+    // await token.deployed(); // waiting for the contract to be deployed
+    // console.log(" deployed to:", token.address, await token.name());
 
     //--- campaign--
     // const CampaignFac = await hre.ethers.getContractFactory("CampaignFactory"); // Getting the Contract

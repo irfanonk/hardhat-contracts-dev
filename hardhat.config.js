@@ -54,6 +54,13 @@ module.exports = {
       accounts:
         process.env.ACCOUNT_PK !== undefined ? [process.env.ACCOUNT_PK] : [],
     },
+    fuji: {
+      url: process.env.AVA_FUJI_URL,
+      gasPrice: 225000000000,
+      chainId: 43113,
+      accounts:
+        process.env.ACCOUNT_PK !== undefined ? [process.env.ACCOUNT_PK] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
