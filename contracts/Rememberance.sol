@@ -10,7 +10,7 @@ contract Rememberance is Ownable {
 
     fallback() external payable {}
 
-    uint fee = 0.1*10**18;
+    uint public fee = 0.1*10**18;
     
     struct Epitaph {
       string firstName;
@@ -21,12 +21,8 @@ contract Rememberance is Ownable {
       string deathDate;
       string notes;
   }
-/*    mapping(uint256 => Epitaph) public order_to_epitaph;
-   mapping(address => uint256[]) public address_to_epitaphOrder;
 
-    mapping(address => mapping(uint => Epitaph[])) someName; */
-
-    mapping(address => Epitaph[]) public newMap;
+    mapping(address => Epitaph[]) public epitaphs;
 
 
     event TransferEvent(address indexed to, uint256 value);
@@ -34,17 +30,17 @@ contract Rememberance is Ownable {
         string indexed firstName,
         string indexed lastName,
         string indexed birthCity,
+        string  firstNameStr,
+        string  lastNameStr,
+        string  birthCityStr,
         string  birthCountry,
         string  birthDate,
         string  deathDate,
         string  notes );
 
     constructor() {
-
-        createEpitaph("a","a","a","a","a","a","a");
-        createEpitaph("b","b","b","b","b","b","b");
-
     }
+
 
     function setFee(uint newFee) public onlyOwner returns (bool) {
         fee = newFee*10**18;
@@ -60,7 +56,7 @@ contract Rememberance is Ownable {
         string memory _deathDate,
         string memory _notes) public payable {
 
-       /*  require( msg.value == fee,"value should be exact to fee "); */
+        require( msg.value == fee,"value should be exact to fee ");
 
         Epitaph memory newEpitaph = Epitaph({
             firstName:_firstName,
@@ -71,9 +67,12 @@ contract Rememberance is Ownable {
             deathDate:_deathDate,
             notes:_notes
         });
-        newMap[msg.sender].push(newEpitaph);
+        epitaphs[msg.sender].push(newEpitaph);
 
         emit  EpitaphEvent (        
+        _firstName,
+        _lastName,
+        _birthCity,
         _firstName,
         _lastName,
         _birthCity,
@@ -85,7 +84,7 @@ contract Rememberance is Ownable {
     }
 
     function getAddressEpitaphCount (address _epitaphOwner) public view returns(uint) {
-        return newMap[_epitaphOwner].length;
+        return epitaphs[_epitaphOwner].length;
     }
 
     function getBalance () public view onlyOwner returns(uint) {
